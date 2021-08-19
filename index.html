@@ -14,13 +14,18 @@
 <body>
 <!--Header-->
     <header class="header">
-        <h1>Coding Quiz`</h1>
-        <p>This is a quiz that will have questions on html, css, javascript and will be timed. Good Luck...!!!</p>
+        <h1>Coding Quiz</h1>
     </header>
+
+<figure class="quiz-containter">
+    <article id="quiz-section">
+       <h1 id="timer"></h1>
+    </article>  
 
 <article> 
     <h2 id="Begin">You may start when you're ready</h2>  
-    <button type="button" class="btn Start">Start</button>
+    <button type="button" id="start">Start</button>
+    <h2 id="question">Current Question</h2>
     <!--<button type="button" class="btn Scores">Highscores</button>!-->
     <ul>
         <li><button id="A">A</button></li>
@@ -30,7 +35,12 @@
     </ul>
 </article>
 
+<article>
+    <h2 id="name"></h2>
+    <h2 id="score"></h2>
+</article>
 
+</figure> 
    <script src="./script.js"></script> 
 </body>
 </html>
